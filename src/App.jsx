@@ -13,6 +13,7 @@ import SubAdmin from './pages/SubAdmin';
 import ContentManagement from './pages/ContentManagement';
 import Settings from './pages/Settings'
 import './transitions.css';
+import Chat from './pages/Chat';
 
 
 function App() {
@@ -51,6 +52,7 @@ function App() {
                   <Route path="sub-admin" element={<SubAdmin />} />
                   <Route path="content-manage" element={<ContentManagement />} />
                   <Route path="settings" element={<Settings />} />
+                  <Route path="chat" element={<Chat />}/>
 
                   <Route index element={<Overview />} />
                 </Routes>
