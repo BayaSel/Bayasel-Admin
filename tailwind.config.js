@@ -15,7 +15,8 @@ module.exports = {
       colors: {
         Green: "#4BAF47",
         deepGreen: "#2A8935",
-        customGray: "#F3F3F3", // Add custom gray color if needed
+        customGray: "#F3F3F3",
+        neutral: "#4A4B4C", // Add custom gray color if needed
       },
       zIndex: {
         'popover': '1000', 
