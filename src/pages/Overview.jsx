@@ -8,29 +8,29 @@ export default function Overview() {
         <h1 className="text-[#555657] font-semibold text-2xl leading-[48px] mb-5">Good Day, VERA</h1>
        
         {/* Total Section */}
-        <section className="flex gap-3">
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
+        <section className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="lg:w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totaluser.png" alt="Total User Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Users</p>
                     <p className="text-semibold text-xl text-[#417149] text-center">500</p>
                 </div>
             </div>
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="lg:w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totalvendor.png" alt="Total Vendor Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Vendors</p>
                     <p className="text-semibold text-xl text-[#115DCF] text-center">150</p>
                 </div>
             </div>
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="lg:w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totalsales.png" alt="Total Sale Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Sales</p>
                     <p className="text-semibold text-xl text-[#8E0AA3] text-center">850</p>
                 </div>
             </div>
-            <div className="w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
+            <div className="lg:w-[200px] h-[120px] flex gap-3 p-3 bg-white rounded transition duration-300 ease-in-out transform hover:scale-105">
                 <img src="/totalvisitor.png" alt="Total Visitor Icon" className="w-[53px] h-[53px] mt-3"/>
                 <div className="flex flex-col space-y-5">
                     <p className="text-semibold text-sm text-[#555657]">Total Visitors</p>

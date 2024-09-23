@@ -44,7 +44,7 @@ function App() {
             
           <TransitionGroup>
             <CSSTransition key={location.key} classNames="fade" timeout={300}>
-              <div className='p-4 lg:p-0'>
+              <div className='p-4 lg:p-0 sm:w-screen lg:w-auto'>
               <Link to='/' onClick={() => setSidebarVisible(true)} className='lg:hidden flex text-Green text-sm py-3'><i className={`bx bx-arrow-back pr-2 transform hover:scale-105 ${isSidebarVisible ? "" : "flex"}`}></i>Back</Link>
                 <Routes location={location}>
                   <Route path="overview" element={<Overview />} />
