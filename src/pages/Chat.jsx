@@ -44,7 +44,7 @@ export default function Chat() {
               <li
                 key={chat.id}
                 className={`p-2 cursor-pointer mb-3 flex items-center gap-4 ${
-                  activeChat?.id === chat.id ? "bg-green-500 text-white" : "bg-[none]"
+                  activeChat?.id === chat.id ? "bg-Green text-white" : "bg-[none]"
                 }`}
                 onClick={() => setActiveChat(chat)}
               >
@@ -66,6 +66,7 @@ export default function Chat() {
                 <i class='bx bx-phone text-white text-3xl'></i>
               </div>
 
+              {/* Date */}
               <div className="flex items-center justify-evenly text-gray-500 gap-2">
                   <span className="border-t border-t-5 flex-grow"></span>
                   <p>Thu, 21</p>
@@ -78,7 +79,7 @@ export default function Chat() {
                   <p
                     key={index}
                     className={`mb-2 p-2 rounded max-w-[70%] ${
-                      message.isUser ? "ml-auto bg-Green text-white" : "mr-auto bg-gray-200 text-black"
+                      message.isUser ? "bg-Green text-white" : " bg-gray-200 text-black"
                     }`}
                   >
                     {message.text}
@@ -87,7 +88,7 @@ export default function Chat() {
               </div>
 
               {/* Input for new message */}
-              <div className="flex items-center">
+              <div className="flex items-center p-4">
                 <input
                   type="text"
                   value={newMessage}
@@ -97,7 +98,7 @@ export default function Chat() {
                 />
                 <button
                   onClick={handleSendMessage}
-                  className="bg-blue-500 text-white p-2 rounded"
+                  className="bg-Green text-white p-2 rounded"
                 >
                   Send
                 </button>
