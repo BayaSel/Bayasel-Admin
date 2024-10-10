@@ -28,10 +28,11 @@ export default function Analytics() {
 
   return (
     <>
-      <div className="flex justify-between pr-[100px]">
+      <div className="flex flex-col lg:flex-row gap-5 justify-between pr-[100px]">
         <div>
-          <h2 className="mb-[18px] text-[18px] font-semibold">Analytics</h2>
-          <span className="px-[25px] py-[11px] flex bg-[#d5dfd7] w-[525px] h-[46px] rounded-xl justify-between text-[16px] mb-[18px]">
+          <h2 className="mb-[10px] lg:mb-[18px] text-[12px] md:text-[16px] lg:text-[18px] font-semibold">Analytics</h2>
+          <span className="px-[15px] lg:px-[25px] py-[11px] flex bg-[#d5dfd7] w-[525px] h-[46px] rounded-xl justify-between 
+          text-[12px] md:text-[14px] lg:text-[16px] mb-[18px]">
             <p>Today</p>
             <p>Yesterday</p>
             <p>Week</p>
@@ -97,47 +98,49 @@ export default function Analytics() {
           </div>
 
           
-            <div className="bg-white rounded-lg px-[24px] pb-[8px] py-[8px] mb-[18px]">
-              <h5 className="text-[16px] font-semibold text-[#5f6162]">Admin Activity</h5>
-              <hr />
-              <div className="pb-[10px] flex justify-between">
-                <p className="text-[14px] text-slate-400">Vendors Added</p>
-                <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+            <div className="flex gap-10 lg:gap-0 lg:block">
+              <div className="bg-white rounded-lg px-[24px] pb-[8px] py-[8px] mb-[18px]">
+                <h5 className="text-[16px] font-semibold text-[#5f6162] pb-5 lg:pb-0">Admin Activity</h5>
+                <hr />
+                <div className="pb-[15px] lg:pb-[10px] pt-5 lg:pt-0 flex justify-between gap-20">
+                  <p className="text-[14px] text-slate-400">Vendors Added</p>
+                  <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+                </div>
+                <div className="pb-[15px] lg:pb-[10px] flex justify-between">
+                  <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
+                  <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+                </div>
+                <div className="pb-[15px] lg:pb-[10px] flex justify-between">
+                  <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
+                  <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+                </div>
+                <div className="pb-[15px] lg:pb-[10px] flex justify-between">
+                  <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
+                  <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+                </div>
+                <div className="pb-[15px] lg:pb-[10px] flex justify-between">
+                  <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
+                  <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+                </div>
+                <div className="pb-[15px] lg:pb-[10px] flex justify-between">
+                  <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
+                  <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+                </div>
               </div>
-              <div className="pb-[10px] flex justify-between">
-                <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
-                <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+            
+              <div className="px-[30.84px] py-[30px] bg-white rounded-lg shadow-lg">
+              <h5 className="pb-[30px]">Top Countries</h5>
+              {countries.map((countries, index) => (
+                <div className="flex justify-between items-center mb-[18px]" key={index}>
+                <div className="flex items-center gap-[13px]">
+                  <img src={countries.image} alt="" className="w-[50.37px] h-[49px] rounded-full"/>
+                  <p>{countries.title}</p>
+                </div>
+                <p>{countries.paragraph}</p>
               </div>
-              <div className="pb-[10px] flex justify-between">
-                <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
-                <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
-              </div>
-              <div className="pb-[10px] flex justify-between">
-                <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
-                <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
-              </div>
-              <div className="pb-[10px] flex justify-between">
-                <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
-                <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
-              </div>
-              <div className="pb-[10px] flex justify-between">
-                <p className="text-[14px] text-[aaaaab]">Vendors Added</p>
-                <p className="text-[#4baf47] text-[14px] font-semibold">139</p>
+              ))}
               </div>
             </div>
-           
-          <div className="px-[30.84px] py-[30px] bg-white rounded-lg shadow-lg">
-            <h5 className="pb-[30px]">Top Countries</h5>
-            {countries.map((countries, index) => (
-              <div className="flex justify-between items-center mb-[18px]" key={index}>
-              <div className="flex items-center gap-[13px]">
-                <img src={countries.image} alt="" className="w-[50.37px] h-[49px] rounded-full"/>
-                <p>{countries.title}</p>
-              </div>
-              <p>{countries.paragraph}</p>
-            </div>
-            ))}
-          </div>
         </div>
       </div>
     </>
